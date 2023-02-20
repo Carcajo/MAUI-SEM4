@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Calculator.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Calculator"
+    >
+    <FlyoutItem Title="Calculator">
+        <Tab>
+            <ShellContent
+                Title="Calculator"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" 
+                />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="ProgressDemo">
+        <Tab>
+            <ShellContent
+                Title="ProgressDemo"
+                ContentTemplate="{DataTemplate local:ProgressDemo}"
+                Route="ProgressDemo" 
+                />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="SQLiteDemo">
+        <Tab>
+            <ShellContent
+                Title="SQLiteDemo"
+                ContentTemplate="{DataTemplate local:SQLiteDemoPage}"
+                Route="SQLiteDemoPage" 
+                />
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="CurrencyConverter">
+        <Tab>
+            <ShellContent
+                Title="CurrencyConverter"
+                ContentTemplate="{DataTemplate local:Pages.CurrencyConverter.CurrencyConverter}"
+                Route="CurrencyConverter" 
+                />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
